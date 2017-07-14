@@ -18,21 +18,21 @@ export class MemberService {
     this.members.push(newMember);
   }
 
-  getMemberById(memberId: string){
+  getMemberById(memberId: string) {
     return this.database.object('members/' + memberId);
   }
 
-  updateMember(localUpdatedMember){
-    var memberEntryInFirebase = this.getMemberById(localUpdatedMember.$key);
+  updateMember(localUpdatedMember) {
+    const memberEntryInFirebase = this.getMemberById(localUpdatedMember.$key);
     memberEntryInFirebase.update({name: localUpdatedMember.name,
-                                manager: localUpdatedMember.manager,
-                                type: localUpdatedMember.type,
-                                description: localUpdatedMember.description,
-                                amount: localUpdatedMember.amount});
+                                age: localUpdatedMember.age,
+                                books: localUpdatedMember.books,
+                                hostings: localUpdatedMember.hostings,
+                                diet: localUpdatedMember.diet});
   }
 
-  deleteMember(localMemberToDelete){
-    var memberEntryInFirebase = this.getMemberById(localMemberToDelete.$key);
+  deleteMember(localMemberToDelete) {
+    const memberEntryInFirebase = this.getMemberById(localMemberToDelete.$key);
     memberEntryInFirebase.remove();
   }
 }

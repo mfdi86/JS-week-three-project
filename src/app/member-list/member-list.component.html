@@ -1,7 +1,18 @@
-<h2>List of Members</h2>
+<h2>Members</h2>
 
-<div *ngFor="let album of albums | async" (click)="goToDetailPage(album)" class="panel panel-default">
-  <div class="panel-body">
-    <h3><em>{{member.name}}</em></h3>
+<div *ngFor="let member of members | async"  class="panel panel-default">
+
+  <div class="panel panel-default">
+    <img src="{{member.url}}" alt="Picture">
+    <!-- <p>{{member.url}}</p> -->
+    <div class="panel-body">
+      <h3 (click)="goToDetailPage(member)"><em>{{member.name}}</em>{{member.age}}</h3>
+      <div *ngIf="currentRoute === '/admin'">
+        {{member.name}}
+        <hr>
+        <app-edit-member [selectedMember]="member"></app-edit-member>
+      </div>
+    </div>
   </div>
+
 </div>

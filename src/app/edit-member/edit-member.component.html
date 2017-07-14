@@ -1,0 +1,24 @@
+<h4>Edit Member</h4>
+
+<label>New Member Name:</label>
+<input [(ngModel)]="selectedMember.name">
+<br>
+
+<label>New Member Age:</label>
+<input [(ngModel)]="selectedMember.age">
+<br>
+
+<label>New Member Book Suggestions:</label>
+<input [(ngModel)]="selectedMember.books">
+<br>
+
+<label>New Member Hosting Dates:</label>
+<input [(ngModel)]="selectedMember.hostings">
+<br>
+
+<label>New Member Dietary Restrictions:</label>
+<input [(ngModel)]="selectedMember.diet">
+
+<button (click)="beginUpdatingMember(selectedMember)">Update</button>
+<hr>
+<button (click)="beginDeletingMember(selectedMember)">Delete</button>

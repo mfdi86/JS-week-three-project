@@ -1,0 +1,23 @@
+{ "members": [{
+    "name": "Marnie",
+    "age": "28",
+    "books": "The God Delusion",
+    "hostings": "June, 03, 2017",
+    "diet":"dairy-free",
+    "id": "1"
+    }, {
+    "name": "Nicole",
+    "age": "30",
+    "books": "Catch 22",
+    "hostings":"Jan, 04, 2017",
+    "diet":"vegan",
+    "id": "2"
+      }, {
+    "name": "Al",
+    "age": "25",
+    "books": "The Fabric of The Cosmos.",
+    "hostings":"February, 07, 2017",
+    "diet":"omnivore",
+    "id": "3"
+  }]
+}

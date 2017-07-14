@@ -5,18 +5,18 @@ import { MemberService } from '../member.service';
 import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
-  selector: 'app-member-list',
+  selector: 'app-members',
   templateUrl: './member-list.component.html',
   styleUrls: ['./member-list.component.css'],
   providers: [MemberService]
 })
-export class MembersComponent implements OnInit {
+export class MemberListComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
 
-  constructor(private router: Router, private memberService: MemberService){}
+  constructor(private router: Router, private memberService: MemberService) {}
 
-  ngOnInit(){
+  ngOnInit() {
     this.members = this.memberService.getMembers();
   }
 
