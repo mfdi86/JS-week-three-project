@@ -1,3 +1,7 @@
-<p>
-  member-list works!
-</p>
+<h2>List of Members</h2>
+
+<div *ngFor="let member of members" (click)="goToDetailPage(member)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{member.name}}</em></h3>
+  </div>
+</div>

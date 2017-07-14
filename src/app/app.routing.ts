@@ -1,8 +1,9 @@
-import { ModuleWithProviders }  from '@angular/core';
+import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { AboutComponent }   from './about/about.component';
-import { MemberListComponent }  from './member-list/member-list.component';
+import { AboutComponent } from './about/about.component';
+import { MemberListComponent } from './member-list/member-list.component';
+import { MemberDetailComponent } from './member-detail/member-detail.component';
 
 const appRoutes: Routes = [
   {
@@ -16,6 +17,10 @@ const appRoutes: Routes = [
   {
     path: 'member-list',
     component: MemberListComponent
+  },
+  {
+    path: 'members/:id',
+    component: MemberDetailComponent
   }
 ];
 
