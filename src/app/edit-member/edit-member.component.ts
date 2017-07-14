@@ -26,5 +26,4 @@ export class EditMemberComponent implements OnInit {
       this.memberService.deleteMember(memberToDelete);
     }
   }
-
 }

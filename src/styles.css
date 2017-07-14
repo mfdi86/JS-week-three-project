@@ -1,8 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
 .footer {
   position: fixed;
   bottom: 0;
   width: 100%;
   height: 60px;
-  background-color: #f5f5f5;
+  background-color: #DCFF84;
   padding: 15px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 1px 2px 1px black;
+}
+
+.footer a {
+  color: #FFF;
+
+}
+
+.container-fluid {
+  background-color: #DCFF84;
+  color: #FFF;
+}
+
+.container-fluid a  {
+  color: #FFF;
+}
+
+.header h1 {
+  font-family: 'Modak', cursive;
+  font-size: 80px;
+  text-align: center;
+  color: #61FF33;
+  text-shadow: 3px 3px 3px black;
+}
+
+.container  {
+  font-family: 'Roboto', sans-serif;
+}
+
+.card {
+  display: flex;
+  background-color: #BFB9BD;
+  border: 2px solid #276614;
+  padding: 3%;
+}
+
+.panel-body {
+  display: flex;
+
+}
+
+img {
+  max-width: 100%;
+  vertical-align: baseline;
 }

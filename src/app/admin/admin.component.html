@@ -34,13 +34,12 @@
         <textarea #newDiet></textarea>
       </div>
 
-      <!-- <div>
+      <div>
         <label>Image URL:</label>
         <br>
         <textarea #newUrl></textarea>
-      </div> -->
-      <!-- if image option added later, also add properties below -->
-      <button (click)="submitForm(newName.value, newAge.value, newBooks.value, newHostings.value, newDiet.value); newName.value=''; newAge.value=''; newBooks.value=''; newHostings.value=''; newDiet.value='';">Add</button>
+      </div>
+      <button (click)="submitForm(newName.value, newAge.value, newBooks.value, newHostings.value, newDiet.value, newUrl.value); newName.value=''; newAge.value=''; newBooks.value=''; newHostings.value=''; newDiet.value=''; newUrl.value=''">Add</button>
     </div>
   </div>
 </div>
